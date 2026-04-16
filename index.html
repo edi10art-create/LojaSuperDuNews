@@ -4,10 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LojaSuperDuNews</title>
-<link rel="icon" type="image/png" href="assets/faviconsuperdu-144.png">
+<link rel="icon" type="image/png" href="assets/lojasuperdu-144.png">
 
 <style>
-
 body {
   margin: 0;
   font-family: Verdana, Arial, sans-serif;
@@ -25,12 +24,12 @@ h1 { font-size: 2.5rem; }
 h2 { font-size: 1.8rem; }
 h3 { font-size: 1.4rem; }
 
-/* ✅ ÚNICA ALTERAÇÃO: substitui os <br> */
-.full-img:first-of-type {
+    /* ✅ ÚNICA ALTERAÇÃO: substitui os <br> */
+.dudu:first-of-type {
   margin-top: 100px;
 }
-
-.full-img {
+  
+ .dudu img {
   width: 100%;
   height: auto;
   display: block;
@@ -48,6 +47,7 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
+  /* No PC, a imagem nunca será maior que 60% da altura da tela */
   max-height: 60vh; 
   object-fit: contain;
 }
@@ -83,37 +83,19 @@ img {
 /* --- SEÇÃO DE OFERTAS RESPONSIVA --- */
 .gwd-div-ym2m {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Coluna no celular */
   align-items: center;
   justify-content: center;
   gap: 20px;
   margin: 30px 0;
 }
 
+/* No PC, as imagens ficam lado a lado para não esticar a página */
 @media (min-width: 768px) {
   .gwd-div-ym2m {
     flex-direction: row;
   }
   .gwd-div-ym2m img {
-    max-height: 350px;
-  }
-}
-
-/* --- SEÇÃO HOMEM DE TERNO --- */
-.gwd-div-terno {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin: 30px 0;
-}
-
-@media (min-width: 768px) {
-  .gwd-div-terno {
-    flex-direction: row;
-  }
-  .gwd-div-terno img {
     max-height: 350px;
   }
 }
@@ -134,53 +116,63 @@ img {
   transition: transform 0.2s;
 }
 
+ /* --- SEÇÃO HOMEM DE TERNO --- */
+.gwd-div-terno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+@media (min-width: 768px) {
+  .gwd-div-terno {
+    flex-direction: row;
+  }
+  .gwd-div-terno img {
+    max-height: 350px;
+  }
+}
+  
 .botao:hover { transform: scale(1.05); }
+
+  .video-wrapper {
+  width: 100%; /* Faz o container ocupar a largura total */
+  max-width: 100%; /* Garante que não ultrapasse a tela */
+}
+
+.video-wrapper iframe {
+  width: 100%; /* Força o vídeo a preencher o lado a lado */
+  aspect-ratio: 16 / 9; /* Mantém a proporção de vídeo padrão */
+  height: auto;
+}
+
 
 </style>
 </head>
 
 <body>
 
-<div class="full-img">
-  <img src="assets/Loja SuperDu Logo Letreiro Face (Loja.com Preto).png" alt="Logo Loja SuperDu" style="max-width: 927px;">
-</div>
-
-<header class="header">
-    <h1 class="news">News</h1>
-</header> 
-  
+   <div class="dudu">
+    <img src="assets/Loja SuperDu Logo Letreiro Face (Loja.com Preto).png" alt="Logo Loja SuperDu" style="max-width: 927px;">
+   
+  </div>
 
 <div class="container">
-  
+
+   <br>
+   <div <h1 class="news">News</h1></div>
   <br>
 
   <div class="bloco-amarelo">
-  <br>
     <h2>Por onde começar?</h2>
-    
-    <p 
-      Estou iniciando a parte jornalística da lojasuperdu.com e estou sem ideias para gerar o artigo semanal. O que falar? Por onde começar?<br><br> 
-      Tenho que escrever coisas bacanas para reter a atenção e, ao mesmo tempo, conquistar novos visitantes nesse canal particular.<br><br> 
-      Me disseram apenas para começar a escrever e pesquisar assuntos relacionados ao meu público, que, nesse caso, são meus clientes.<br><br> 
-      Ex: se o negócio for uma oficina mecânica, posso escrever sobre rolamentos e lubrificantes. <br><br>
-      Se for sobre costura, posso falar sobre experiências e macetes para fazer bainha invisível. <br><br>
-      Se for uma clínica de emagrecimento, posso abordar como emagrecer <br>mantendo a boa elasticidade da pele.<br><br> 
-      Ou seja, o seu jornal deve ser direcionado ao seu público.<br><br> 
-      Você tem uma semana para pesquisar, absorver e escrever artigos interessantes sobre o seu negócio.<br><br> 
-      Neste momento, estou apanhando para escrever sobre o BrandNotify. <br>O que dizer? Como dizer? Eu realmente não sei. <br>
-      E se você, leitor, puder me dizer, serei eternamente grato.<br><br> 
-      Como você pode ver, não existe uma única maneira de entreter o leitor. O que você não pode é ser chato, porque ninguém merece, né?<br><br> 
-      Eu gosto de tudo um pouco. Gosto de mecânica e posso escrever <br>
-      muitos artigos retratando as minhas experiências. <br>
-      Gosto de culinária e posso também escrever sobre as experiências <br>
-      boas e ruins que aprontei na cozinha. <br>Gosto de tocar guitarra e posso escrever sobre isso também.<br><br> 
-      E você? Aposto que, se abrir as gavetas da sua mente, vai se surpreender com a quantidade de coisas bacanas que pode <br>
-      compartilhar com os seus leitores.<br><br> 
-      Essa introdução mostra uma pequena ideia de como gerar audiência e aproveitar para lançar um produto, uma oferta, um sorteio ou um simples agradecimento por estar presente todas as semanas na página informativa da sua empresa.<br><br> 
-      O BrandNotify tem o botão que liga a sua empresa ao seu conteúdo, mas o conteúdo representa o que você deseja que as pessoas <br>
-      pensem a respeito da sua marca. <br>O poder está nas suas mãos, <br>e ninguém melhor para atrair as pessoas do que <br>
-      o próprio gestor da empresa.
-  </p>
+    <p>(Essa página é um exemplo real de como manter pessoas voltando toda semana.)</p>
+    <p>Estou iniciando a parte jornalística da lojasuperdu.com e estou sem ideias para gerar o artigo semanal. O que falar? Por onde começar?</p>
+    <p>Tenho que escrever coisas bacanas para reter a atenção e, ao mesmo tempo, conquistar novos visitantes nesse canal particular.</p>
+    <p>Me disseram apenas para começar a escrever e pesquisar assuntos relacionados ao meu público, que, nesse caso, são meus clientes.</p>
+    <p>Ex: se o negócio for uma oficina mecânica, posso escrever sobre rolamentos e lubrificantes. Se for sobre costura, posso falar sobre experiências e macetes para fazer bainha invisível.</p>
+    <p>O BrandNotify tem o botão que liga a sua empresa ao seu conteúdo, mas o conteúdo representa o que você deseja que as pessoas pensem a respeito da sua marca.</p>
     <p><strong>Se a pessoa voltar semana que vem… você já ganhou.</strong></p>
   </div>
 
@@ -190,31 +182,35 @@ img {
     <p><strong>Exemplo real de retenção.</strong></p>
   </div>
 
-  <div class="gwd-div-ym2m">
-    <img src="assets/livro.png">
-    <img src="assets/Oferta9-90.png">
-  </div>
+  <!-- Ofertas Lado a Lado no PC -->
+   
+     <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/AtmdSS79fNI"frameborder="0" allowfullscreen></iframe>
+    </div>
+
+     <div class="bloco-historia">
+     Descobri uma marca que é pura arte, atitude e estilo! 
+A Repolho Nervoso Fashion transforma obras de arte em camisetas cheias de personalidade — e essa aqui virou a minha favorita. 
+
+Cada estampa tem história, o tecido é super confortável e o design é incrível.
+     </div>
+
+      <div class="gwd-div-terno">
+  <img src="assets/Modelo1.1.webp" alt="Antes">
+  <img src="assets/Modelo5.webp" alt="Depois">
+</div>
   
-  <a href="https://www.amazon.com.br/dp/B0GKMRFGYP" target="_blank" class="botao">
-    Ver na Amazon
+  <a href="https://reserva.ink/repolhonervoso" target="_blank" class="botao">
+    Ver Reserva Ink
   </a>
 
   <div class="bloco-verde">
-  <br>
-    <h2>Dicas de comunicação</h2><br> 
-  <p>Devo ou não utilizar IA para gerar conteúdos?<br> 
-  Depende. Se a IA for te substituir, sinto muito,<br> 
-  mas ela não tem o carisma, nem a alma humana<br> 
-  que gera a energia da comunicação.<br> 
-  Uma pessoa pode até falar errado e, ainda assim,<br> 
-  ser altamente simpática.<br> Às vezes, o erro na fala pode ser o melhor aliado<br> 
-  para reter a atenção do cliente.<br> 
-  A IA pode ser certinha demais… e isso também gera fricção.<br>.</p>
+    <h2>Dicas de comunicação</h2>
+    <p>A IA pode ser certinha demais… e isso também gera fricção. Uma pessoa pode até falar errado e, ainda assim, ser altamente simpática.</p>
   </div>
 
   <div class="bloco-historia">
-  <br>
-    <h2>Pança, panceta e esperança</h2><br>
+    <h2>Pança, panceta e esperança</h2>
     <p>Minha barriga estava virando “pança”.</p>
     <p>A estética é a preocupação inicial, o que nem sempre gera urgência, mas, quando me falaram que eu poderia morrer...</p>
     <p>Morrer de barriga grande??? Isso existe??? Exatamente...</p>
@@ -236,16 +232,17 @@ img {
 </div>
 
   <div class="bloco-final">
-    <h2>Semana que vem.</h2>
-    <h3>A Gênesis do Repolho Nervoso.</h3>
+    <h2>Quer entender de onde surgiu o Repolho Nervoso?</h2>
+    <h3>Tudo começa aos 12 anos, com uma história que marcou o início de uma vocação artística.
+ Assista agora “A Gênesis do Repolho Nervoso”</h3>
   </div>
   
-  <div style="margin:30px 0;">
-    <img src="assets/RepolhoNauta.webp" alt="RepolhoNauta" style="max-height: 250px;">
-  </div>
-
+  <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/t5XoTN7b0JY"frameborder="0" allowfullscreen></iframe>
+    </div>
+  
+  
   <div class="bloco-final">
-  <br>
     <h2>Bom… por hoje é isso.</h2>
     <p>Nada muito perfeito… mas funcionando.</p>
     <p>Se você chegou até aqui… já deu certo.</p>
