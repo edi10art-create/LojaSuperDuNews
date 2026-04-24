@@ -67,6 +67,16 @@ img {
   font-weight: bold;
   text-align: center; 
   margin: 10px 0;
+  
+  /* No PC, as imagens ficam lado a lado para não esticar a página */
+@media (min-width: 768px) {
+  .gwd-div-news {
+    flex-direction: row;
+  }
+  .gwd-div-news img {
+    max-height: 350px;
+  }
+}
 }
 
 .bloco-amarelo { 
